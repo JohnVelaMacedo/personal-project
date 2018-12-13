@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Personal</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Personal Project</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-    <div id="app">{{ message }}</div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#">JV</a>
+            </div>
+            <ul class="header-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </header>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello World'
-            }
+        var navLinks = document.querySelectorAll('li');
+        $('.menu-icon').click(function() {
+            $('ul.header-nav').toggleClass('nav-active');
         });
+        navLinks.forEach((e, i) => {
+            e.style.animation = `navLinkFade 0.5s ease forwards ${i / 7 + 0.3}s`;
+        })
     </script>
 </body>
 </html>
