@@ -74,7 +74,7 @@ nav {
 .header-nav {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 40%;
 }
 
@@ -131,7 +131,7 @@ footer {
 .footer-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     letter-spacing: 15px;
 }
 
@@ -143,6 +143,7 @@ footer {
 .contact .contact-content {
     font-family: 'Poppins-Light';
     letter-spacing: 0;
+    font-size: 15px;
 }
 
 /* Redes Sociales */
@@ -152,9 +153,23 @@ footer {
     text-align: center;
 }
 
-.redes-sociales .redes-sociales-content {
-    font-family: 'Poppins-Light';
-    letter-spacing: 0;
+.redes-sociales .redes-sociales-content a {
+    text-decoration: none;
+    filter: grayscale(1.1);
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.redes-sociales .redes-sociales-content a:hover {
+    filter: grayscale(0);
+}
+
+.fa-facebook {
+    color: #3A5795;
+}
+
+.fa-github {
+    color: #6441a4;
 }
 
 /* Copyright */
@@ -204,6 +219,15 @@ footer {
     }
     .hero p {
         font-size: 17px;
+    }
+    footer {
+        padding: 0 20px;
+    }
+    .contact .contact-content {
+        text-align: center;
+    }
+    .redes-sociales .redes-sociales-content a {
+        font-size: 20px;
     }
     .footer-container {
         font-size: 13px;
