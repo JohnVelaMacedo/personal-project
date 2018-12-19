@@ -145,7 +145,9 @@ nav {
 
 #about-me .image-about {
     width: 50%;
-    background-color: #69779b;
+    background-image: url(../img/IMG-20180212-WA0009.jpg);
+    background-position: bottom center;
+    background-size: cover;
 } 
 
 #about-me .content-about {
@@ -206,7 +208,8 @@ nav {
 
 #skills .skills-habilities {
     width: 50%;
-    background-color: #f5efe3;
+    /* background-color: #f5efe3; */
+    background-color: #f2c6b4;
 }
 
 #skills .inner-content {
@@ -434,6 +437,7 @@ footer {
     #about-me .image-about {
         width: 100%;
         height: 300px;
+        background-position: center center;
     }
     #about-me .content-about {
         width: 100%;
