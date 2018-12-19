@@ -33,6 +33,7 @@ body {
     width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
+    background-color: #f5f5f5;
 }
 
 header {
@@ -205,8 +206,7 @@ nav {
 
 #skills .skills-habilities {
     width: 50%;
-    /* background-color: #69779b; */
-    background-color: #709078;
+    background-color: #f5efe3;
 }
 
 #skills .inner-content {
@@ -298,9 +298,9 @@ nav {
 }
 
 #what-can .content-what div:hover {
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 12px 13px 42px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 13px 42px -20px rgba(0,0,0,0.75);
+    box-shadow: 12px 13px 42px -20px rgba(0,0,0,0.75);
 }
 
 #what-can .content-what div i {
@@ -471,7 +471,7 @@ footer {
         padding: 20px 0px;
     }
     #what-can {
-        padding: 10px 0px; 
+        padding: 10px 0px 40px 0px; 
         height: 100%;
         width: 100%
     }
