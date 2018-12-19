@@ -178,11 +178,6 @@ nav {
     flex-flow: row wrap;
 }
 
-#skills .skills-habilities {
-    width: 50%;
-    background-color: #bbbbbb;
-}
-
 #skills .content-about {
     width: 50%;
     padding: 100px 40px;
@@ -208,30 +203,109 @@ nav {
     font-size: 13px;
 }
 
+#skills .skills-habilities {
+    width: 50%;
+    background-color: #69779b;
+}
+
+#skills .inner-content {
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    padding: 80px;
+    font-family: 'Poppins-Bold', serif;
+}
+
+#skills .inner-content .skill{
+    padding-bottom: 10px;
+}
+
+#skills .inner-content .skill h5 {
+    margin-bottom: 10px;
+}
+
+#skills .inner-content .skill h5 > small {
+    color: rgba(19, 21, 27, 0.8);
+}
+
+#skills .inner-content .skill div {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 2px;
+}
+
+#skills .inner-content .skill div > span {
+    background-color: white;
+    display: block;
+    height: 2px;
+}
+
+#skills .inner-content .skill div.php > span {
+    width: 80%;
+}
+
+#skills .inner-content .skill div.html > span {
+    width: 90%;
+}
+
+#skills .inner-content .skill div.vuejs > span {
+    width: 83%;
+}
+
+#skills .inner-content .skill div.web > span {
+    width: 85%;
+}
+
 /* What can */
-#what-can {
+/* #what-can {
     display: flex;
     flex-flow: column wrap;
+    height: 100vh;
     text-align: center;
-    margin-bottom: 20px;
-    padding: 140px 40px 100px 40px;
+    padding-top: 100px;
 }
 
 #what-can h1 {
     text-transform: uppercase;
     font-family: 'Poppins-Bold', serif;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 #what-can .content-what {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 80px;
+    padding: 40px 0px;
+    justify-content: center;
 }
 
 #what-can .content-what div {
     width: 33.3%;
+    padding: 0px 20px;
 }
+
+#what-can .content-what div:hover > h4,
+#what-can .content-what div:hover > i {
+    color: #009BDE;
+}
+
+#what-can .content-what div h4 {
+    font-family: 'Poppins-Bold', serif;
+    margin: 0px;
+    padding-top: 10px;
+    transition: all .3s ease-in-out;
+}
+
+#what-can .content-what div i {
+    font-size: 40px;
+    transition: all .3s ease-in-out;
+}
+
+#what-can .content-what div p {
+    font-family: 'Poppins-Light', serif;
+    font-size: 13px;
+    text-align: justify;
+} */
 
 /* FOOTER */
 footer {
@@ -371,13 +445,17 @@ footer {
         font-size: 12px;
     }
     #skills .skills-habilities {
-        height: 300px;
+        height: 380px;
         order: 1;
         width: 100%;
     }
-    #what-can {
-        padding: 20px;
+    #skills .inner-content {
+        padding: 20px 0px;
+    }
+    /* #what-can {
+        height: 100%;
         margin-bottom: 0px;
+        padding: 20px;
     }
     #what-can h1 {
         font-size: 20px;
@@ -385,16 +463,18 @@ footer {
     #what-can .content-what {
         display: flex;
         flex-flow: column wrap;
-        margin-top: 40px;
     }
     #what-can .content-what div {
-        width: 100%;
-        margin-bottom: 40px;
         font-size: 14px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #what-can .content-what div p {
+        text-align: justify;
     }
     #what-can .content-what div:nth-child(3) {
         margin-bottom: 0px;
-    }
+    } */
     .footer-container {
         padding: 0 20px;
     }
